@@ -8,7 +8,7 @@ import HomePage from "./pages/HomePage";
 import TasksPage from "./pages/TasksPage";
 import TaskForm from "./pages/TaskForm";
 import ProtectedRoutes from "./ProtectedRoutes";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
