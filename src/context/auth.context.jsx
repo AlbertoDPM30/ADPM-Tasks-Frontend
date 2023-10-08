@@ -27,7 +27,6 @@ export const AuthProvider = ({ children }) => {
   const signup = async (user) => {
     try {
       const res = await registerRequest(user);
-      console.log(res.data);
       setUser(res.data);
       setIsAuthenticated(true);
     } catch (error) {
@@ -74,7 +73,6 @@ export const AuthProvider = ({ children }) => {
 
       if (!jCookies.token) {
         setIsAuthenticated(false);
-        console.log(jCookies);
         setLoading(false);
         return setUser(null);
       }
